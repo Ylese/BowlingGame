@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module BowlingGame</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">BowlingGame</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Clyle%5Conedrive%5Cdocuments%5Cgithub%5Cbowlinggame%5Cbowlinggame.py">c:\users\lyle\onedrive\documents\github\bowlinggame\bowlinggame.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="BowlingGame.html#BowlingGame">BowlingGame</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="BowlingGame">class <strong>BowlingGame</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;class&nbsp;to&nbsp;represent&nbsp;a&nbsp;10-pin&nbsp;bowling&nbsp;game.<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+<a href="#BowlingGame-roll">roll</a>(pins)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Records&nbsp;the&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;a&nbsp;single&nbsp;roll.<br>
+<a href="#BowlingGame-score">score</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;the&nbsp;total&nbsp;score&nbsp;for&nbsp;the&nbsp;game&nbsp;after&nbsp;all&nbsp;frames&nbsp;are&nbsp;completed.<br>
+<a href="#BowlingGame-isStrike">isStrike</a>(rollIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Checks&nbsp;if&nbsp;the&nbsp;current&nbsp;roll&nbsp;is&nbsp;a&nbsp;strike&nbsp;(all&nbsp;10&nbsp;pins&nbsp;knocked&nbsp;down).<br>
+<a href="#BowlingGame-isSpare">isSpare</a>(rollIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Checks&nbsp;if&nbsp;the&nbsp;current&nbsp;frame&nbsp;is&nbsp;a&nbsp;spare&nbsp;(10&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;two&nbsp;rolls).<br>
+<a href="#BowlingGame-strikeScore">strikeScore</a>(rollIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;strike,&nbsp;including&nbsp;the&nbsp;next&nbsp;two&nbsp;rolls.<br>
+<a href="#BowlingGame-spareScore">spareScore</a>(rollIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;spare,&nbsp;including&nbsp;the&nbsp;next&nbsp;roll.<br>
+<a href="#BowlingGame-frameScore">frameScore</a>(rollIndex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;normal&nbsp;frame&nbsp;(sum&nbsp;of&nbsp;two&nbsp;rolls).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="BowlingGame-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initializes&nbsp;an&nbsp;empty&nbsp;list&nbsp;of&nbsp;rolls.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-frameScore"><strong>frameScore</strong></a>(self, rollIndex)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;normal&nbsp;frame&nbsp;(sum&nbsp;of&nbsp;two&nbsp;rolls).<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+rollIndex&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;current&nbsp;roll.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;sum&nbsp;of&nbsp;the&nbsp;two&nbsp;rolls&nbsp;in&nbsp;the&nbsp;current&nbsp;frame.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-isSpare"><strong>isSpare</strong></a>(self, rollIndex)</dt><dd><span class="code">Checks&nbsp;if&nbsp;the&nbsp;current&nbsp;frame&nbsp;is&nbsp;a&nbsp;spare&nbsp;(10&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;two&nbsp;rolls).<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+rollIndex&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;current&nbsp;roll.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;frame&nbsp;is&nbsp;a&nbsp;spare,&nbsp;False&nbsp;otherwise.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-isStrike"><strong>isStrike</strong></a>(self, rollIndex)</dt><dd><span class="code">Checks&nbsp;if&nbsp;the&nbsp;current&nbsp;roll&nbsp;is&nbsp;a&nbsp;strike&nbsp;(all&nbsp;10&nbsp;pins&nbsp;knocked&nbsp;down).<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+rollIndex&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;current&nbsp;roll.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;if&nbsp;the&nbsp;current&nbsp;roll&nbsp;is&nbsp;a&nbsp;strike,&nbsp;False&nbsp;otherwise.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-roll"><strong>roll</strong></a>(self, pins)</dt><dd><span class="code">Records&nbsp;the&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;a&nbsp;single&nbsp;roll.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+pins&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;in&nbsp;this&nbsp;roll.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-score"><strong>score</strong></a>(self)</dt><dd><span class="code">Calculates&nbsp;and&nbsp;returns&nbsp;the&nbsp;total&nbsp;score&nbsp;for&nbsp;the&nbsp;game.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;total&nbsp;score&nbsp;after&nbsp;10&nbsp;frames.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-spareScore"><strong>spareScore</strong></a>(self, rollIndex)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;spare,&nbsp;which&nbsp;includes&nbsp;the&nbsp;next&nbsp;roll.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+rollIndex&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;current&nbsp;roll.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;score&nbsp;for&nbsp;the&nbsp;spare,&nbsp;including&nbsp;the&nbsp;next&nbsp;roll.</span></dd></dl>
+
+<dl><dt><a name="BowlingGame-strikeScore"><strong>strikeScore</strong></a>(self, rollIndex)</dt><dd><span class="code">Calculates&nbsp;the&nbsp;score&nbsp;for&nbsp;a&nbsp;strike,&nbsp;which&nbsp;includes&nbsp;the&nbsp;next&nbsp;two&nbsp;rolls.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+rollIndex&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;current&nbsp;roll.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;score&nbsp;for&nbsp;the&nbsp;strike,&nbsp;including&nbsp;the&nbsp;next&nbsp;two&nbsp;rolls.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
